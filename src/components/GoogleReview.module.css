@@ -1,0 +1,31 @@
+.googleReview {
+  position: fixed;
+  right: 0px; /* Adjust as needed */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none; /* Hide by default */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+@media (min-width: 768px) { /* Show only on PC view */
+  .googleReview {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Optional: background color */
+    padding: 10px; /* Optional: padding */
+    border-radius: 0px; /* Optional: rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+  }
+
+  .googleReview img {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and rating */
+  }
+
+  .googleReview span {
+    font-size: 1.5rem; /* Adjust font size */
+    color: black; /* Adjust text color */
+  }
+} 
